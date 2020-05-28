@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,7 +11,9 @@
     <meta id="_csrf_header" name="_csrf_header" th:content="${_csrf.headerName}"/>
 
     <!-- CSS - Page -->
-    <link rel='stylesheet' type='text/css' media='screen' href='./login.html'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./icon/fontawesome-free-5.13.0-web/css/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/login.css'>
     
     <!-- JS - Library -->
     <script src='./js/lib/jquery-1.12.4.min.js'></script>
@@ -23,50 +24,58 @@
     <script src='./js/common/apis.js'></script>
     <script src='./js/common/param-validate.js'></script>
 
-    <!-- JS - Page -->
-    <script src='./js/login.js'></script>
-
     <!--[if lt IE 9]>
         <script src="./lib/html5shiv.js"></script> 
     <![endif]-->
 </head>
 <body>
-    <section id="app">
-        <form id="login">
-            <h2>Log In</h2>
-            <p>Ready to discover some amazing opportunities?</p>
-            <div class="id">
-                <i class=""></i>
-                <input type="text" name="email" placeholder="Email">
+  <div class="filter"></div>
+  <section id="app">
+    <div class="container">
+      <form id="login" class="login">
+        <div class="contents">
+          <h2>Log In</h2>
+          <p>Ready to discover some amazing opportunities?</p>
+          <div class="id">
+            <i class="fas fa-envelope"></i>
+            <input type="text" name="email" placeholder="Email">
+          </div>
+          <div class="password">
+            <i class="fas fa-lock"></i>
+            <input type="text" name="password" placeholder="Password">
+          </div>
+          <a class="forgot" href="#">Forgot your Password?</a>
+          <button class="submit">LOG IN</button>
+        </div>
+      </form>
+      <section id="slider" class="image-slider">
+        <div class="filter"></div>
+        <div class="contents">
+          <header class="header">
+            <span class="logo">ATC</span>
+            <span class="search-account">Don't have an account?</span>
+            <a href="#" class="sign-up">Sign Up</a>
+          </header>
+          <section class="slider-container">
+            <div class="item">
+              <h2>START YOUR JOURNEY HERE</h2>
+              <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
             </div>
-            <div class="password">
-                <i class=""></i>
-                <input type="text" name="password" placeholder="Password">
+            <div class="item">
+              <h2>START YOUR JOURNEY HERE</h2>
+              <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
             </div>
-            <a href="#">Forgot your Password?</a>
-            <button>LOG IN</button>
-        </form>
-        <section id="slide">
-            <header class="header">
-                <span class="logo"></span>
-                <span class="search-account"></span>
-                <a href="#" class="sign-up"></a>
-            </header>
-            <section class="slider">
-                <div class="item">
-                    <h2>START YOUR JOURNEY HERE</h2>
-                    <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
-                </div>
-                <div class="item">
-                    <h2>START YOUR JOURNEY HERE</h2>
-                    <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
-                </div>
-                <div class="item">
-                    <h2>START YOUR JOURNEY HERE</h2>
-                    <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
-                </div>
-            </section>
-        </section>
-    </section>
+            <div class="item">
+              <h2>START YOUR JOURNEY HERE</h2>
+              <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- JS - Page -->
+  <script src='./js/login.js'></script>
 </body>
 </html>
