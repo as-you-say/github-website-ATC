@@ -1,0 +1,72 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>제목</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Security - CSRF -->
+    <meta id="_csrf" name="_csrf" th:content="${_csrf.token}"/>
+    <meta id="_csrf_header" name="_csrf_header" th:content="${_csrf.headerName}"/>
+
+    <!-- CSS - Page -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./login.html'>
+    
+    <!-- JS - Library -->
+    <script src='./js/lib/jquery-1.12.4.min.js'></script>
+    <script src='./js/lib/vue.js'></script>
+
+    <!-- JS - Common -->
+    <script src='./js/common/http.js'></script>
+    <script src='./js/common/apis.js'></script>
+    <script src='./js/common/param-validate.js'></script>
+
+    <!-- JS - Page -->
+    <script src='./js/login.js'></script>
+
+    <!--[if lt IE 9]>
+        <script src="./lib/html5shiv.js"></script> 
+    <![endif]-->
+</head>
+<body>
+    <section id="app">
+        <form id="login">
+            <h2>Log In</h2>
+            <p>Ready to discover some amazing opportunities?</p>
+            <div class="id">
+                <i class=""></i>
+                <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="password">
+                <i class=""></i>
+                <input type="text" name="password" placeholder="Password">
+            </div>
+            <a href="#">Forgot your Password?</a>
+            <button>LOG IN</button>
+        </form>
+        <section id="slide">
+            <header class="header">
+                <span class="logo"></span>
+                <span class="search-account"></span>
+                <a href="#" class="sign-up"></a>
+            </header>
+            <section class="slider">
+                <div class="item">
+                    <h2>START YOUR JOURNEY HERE</h2>
+                    <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
+                </div>
+                <div class="item">
+                    <h2>START YOUR JOURNEY HERE</h2>
+                    <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
+                </div>
+                <div class="item">
+                    <h2>START YOUR JOURNEY HERE</h2>
+                    <p>If you are applying for a job abroad (particularly in Europe or South America), this is the only place you have to look for!</p>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
