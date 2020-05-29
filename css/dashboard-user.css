@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ddd;
+}
+#side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ef74ff;
+    height: 100vh;
+    width: 400px;
+    z-index: 5;
+}
+#dashboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f5a6ff;
+    height: 100vh;
+    width: 100%;
+    padding-left: 400px;
+}
+
+@media(max-width: 1600px) {
+}
+
+@media(max-width: 1280px) {
+}
+
+@media(max-width: 1024px) {
+}
+
+@media(max-width: 768px) {
+}

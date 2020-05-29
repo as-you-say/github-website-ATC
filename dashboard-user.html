@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>User Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Security - CSRF -->
+    <meta id="_csrf" name="_csrf" th:content="${_csrf.token}" />
+    <meta id="_csrf_header" name="_csrf_header" th:content="${_csrf.headerName}" />
+
+    <!-- CSS - Page -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./icon/fontawesome-free-5.13.0-web/css/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/dashboard-user.css'>
+
+    <!-- JS - Library -->
+    <script src='./js/lib/jquery-1.12.4.min.js'></script>
+    <script src='./js/lib/vue.js'></script>
+
+    <!-- JS - Common -->
+    <script src='./js/common/http.js'></script>
+    <script src='./js/common/apis.js'></script>
+    <script src='./js/common/param-validate.js'></script>
+
+    <!--[if lt IE 9]>
+        <script src="./lib/html5shiv.js"></script>  
+    <![endif]-->
+</head>
+<body>
+    <section id="app">
+        <aside id="side">
+        </aside>
+        <section id="dashboard">
+        </section>
+    </section>
+
+    <!-- JS - Page -->
+    <script src='./js/dashboard-user.js'></script>
+</body>
+</html>

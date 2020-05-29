@@ -2,39 +2,33 @@
 
 /* Layout */
 body {
-  background-image: url('../img/login-bg.jpg');
-}
+  background-image: url('../img/login-bg.jpg');}
 .container{
   margin-top: 8vh;
   height: 84vh;
   box-shadow: 0 0.938em 2.188em #384897bf,
-              0 0.313em 0.938em #384897bf;
-}
+              0 0.313em 0.938em #384897bf;}
 #app {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #5f7affbf;
-}
+  background-color: #5f7affbf;}
 #login {
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 450px;
   height: 100%;
-  background-color: #fff;
-}
+  background-color: #fff;}
 #slider {
   width: 100%;
-  padding-left: 350px;
+  padding-left: 450px;
   height: 100%;
-  /* background-color: #516bfe; */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
+  -webkit-box-sizing: border-box;}
 
 /* Login Form */
 .login .contents {
@@ -42,68 +36,210 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%);}
 .login .contents>h2 {
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   color: #5672ff;
-}
+  font-weight: bold;}
 .login .contents>p {
-  font-size: 13px;
+  font-size: 15px;
   text-align: center;
   margin-top: 12px;
+  margin-bottom: 27px;
   display: block;
-  color: #bebebe;
-}
-.login .contents .id,
-.login .contents .password{
-  height: 30px;
-}
-.login .contents .id i,
-.login .contents .password i
-{
+  color: #bebebe;}
+.login .contents .input {
+  display: block;
+  height: 40px;
+  width: 225px;
+  margin: 0 auto;
+  position: relative;}
+.login .contents .input {
+  margin-top: 20px;}
+.login .contents .input i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #dbdbdb;}
+.login .contents .input input {
   position: absolute;
   left: 0;
-}
-.login .contents .id input,
-.login .contents .password input {
-  position: absolute;
-  left: 0;
-  width: 180px;
+  width: 100%;
   box-sizing: border-box;
-  height: 30px;
-}
-.login .contents .forgot {}
+  height: 100%;
+  background: none;
+  border: 1px solid #dbdbdb;
+  padding-left: 35px;
+  font-size: 13px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 0.938em 2.188em #dbdbdb22,
+              0 0.313em 0.938em #dbdbdb22;}
+.login .contents .input input::placeholder {
+  color: #bebebe;}
+.login .contents .input input:focus {
+  border: 1px solid #5672ff;
+  transition: all .5s;}
+.login .contents .input input:focus + i {
+  color: #5672ff;
+  transition: all .5s;}
+.login .contents .forgot {
+  color: #bebebe;
+  text-decoration: none;
+  width: 225px;
+  text-align: right;
+  margin: 0 auto;
+  display: block;
+  padding: 6px 0;
+  font-size: 12px;}
+.login .contents .forgot span {
+  position: relative;
+  padding-bottom: 4px;}
+.login .contents .forgot span:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background-color: #5672ff;
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  opacity: 1;}
+.login .contents .forgot:hover span {
+  transition: all .5s;
+  color: #5672ff;}
+.login .contents .forgot:hover span:after {
+  transition: all .5s;
+  width: 100%;}
 .login .contents .submit {
   border: none;
   border-radius: 2px;
   background-color: #5672ff;
   color: #fff;
-  width: 180px;
-  height: 32px;
+  width: 225px;
+  height: 40px;
   display: block;
-  margin: 0 auto;
-}
+  margin: 24px auto;
+  cursor: pointer;
+  box-shadow: 0 0.938em 2.188em #5672ff33,
+              0 0.313em 0.938em #5672ff33;}
 
 /* Image Slider */
+.image-slider {}
 .image-slider .filter {
+  position: relative;
   background-color: #5f7affbf;
   z-index: 10;
   height: 100%;
-  width: 100%;
-}
+  width: 100%;}
 .image-slider .contents {
   position: absolute;
   top: 0;
   color: #fff;
-}
-
-
-
-
-
-
+  width: 100%;
+  height: 100%;}
+.image-slider .contents .header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  z-index: 10;}
+.image-slider .contents .header .logo {
+  position: absolute;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 50px;}
+.image-slider .contents .header .search-account {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 190px;}
+.image-slider .contents .header .sign-up {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 7px 18px;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: #fff;}
+.image-slider .contents .header .sign-up span {
+  position: relative;
+  padding-bottom: 1px;}
+.image-slider .contents .header .sign-up span:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background-color: #fff;
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  opacity: 1;}
+.image-slider .contents .header .sign-up:hover {
+  transition: all .5s;
+  background-color: #ffffff11;}
+.image-slider .contents .header .sign-up:hover span:after {
+  transition: all .5s;
+  width: 100%;}
+.image-slider .contents .slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;}
+.image-slider .contents .slider-container .list {
+  position: relative;
+  width: 100%;
+  height: 100%;}
+.image-slider .contents .slider-container .list .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;}
+.image-slider .contents .slider-container .list .item .description {
+  position: absolute;
+  bottom: 180px;
+  left: 50px;}
+.image-slider .contents .slider-container .list .item .description h2 {
+  font-size: 40px;
+  font-weight: bold;}
+.image-slider .contents .slider-container .list .item .description p {
+  margin-top: 15px;
+  font-size: 15px;
+  padding-right: 50px;}
+.image-slider .contents .slider-container .paging {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;}
+.image-slider .contents .slider-container .paging .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  float: left;
+  margin-right: 15px;
+  cursor: pointer;}
+.image-slider .contents .slider-container .paging .dot.on {
+  background-color: #fff;}
+.image-slider .contents .slider-container .paging .dot:hover {
+  background-color: #ffffffaa;
+  transition: all .3s;}
+.image-slider .contents .slider-container .paging .dot.on:hover {
+  background-color: #fff;}
 
 @media(max-width: 1600px) {
 }
