@@ -30,9 +30,27 @@
 </head>
 <body>
     <section id="app">
-        <aside id="side">
+        <aside id="side" class="side">
+            
+            <div class="logo">
+                <i class="fas fa-database"></i>
+                <span>ATC</span>
+                <span>Client</span>
+            </div>
+            <ul class="list">
+                <li class="item on"><a class="link" href="#"><i class="fas fa-server"></i>Public Cloud</a></li>
+                <li class="item"><a class="link" href="#"><i class="fas fa-server"></i>Private Cloud</a></li>
+                <li class="item"><a class="link" href="#"><i class="fas fa-hdd"></i>Storage</a></li>
+                <li class="item"><a class="link" href="#"><i class="fas fa-user-edit"></i>Edit Account</a></li>
+            </ul>
         </aside>
-        <section id="dashboard">
+        <section id="dashboard" class="dashboard">
+            <section id="public-cloud" class="tab on">
+                <div class="contents"></div>
+            </section>
+            <section id="private-cloud" class="tab"></section>
+            <section id="storage" class="tab"></section>
+            <section id="edit-account" class="tab"></section>
         </section>
     </section>
 
