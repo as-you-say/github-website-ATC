@@ -107,7 +107,23 @@
     height: 190%;
 }
 
+.dashboard .tab .contents .vm-list {
+  display: block;
+  width: 100%;
 
+}
+.dashboard .tab .contents .vm-list .vm {
+  float: left;
+}
+.dashboard .tab .contents .vm-list .vm i {
+  font-size: 100px;
+}
+.dashboard .tab .contents .vm-list .vm i.fa-windows{color: #378dff}
+.dashboard .tab .contents .vm-list .vm i.fa-linux{color: #252525}
+.dashboard .tab .contents .vm-list .vm i.fa-ubuntu{color: #ff8147}
+.dashboard .tab .contents .vm-list .vm i.fa-redhat{color: #ff2f2f}
+.dashboard .tab .contents .vm-list .vm i.fa-fedora{color: #415883}
+.dashboard .tab .contents .vm-list .vm i.fa-centos{color: #cb47ff;}
 
 @media(max-width: 1600px) {
 }
