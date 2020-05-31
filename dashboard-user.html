@@ -18,6 +18,7 @@
     <!-- JS - Library -->
     <script src='./js/lib/jquery-1.12.4.min.js'></script>
     <script src='./js/lib/vue.js'></script>
+    <script src='./js/lib/Chart.min.js'></script>
 
     <!-- JS - Common -->
     <script src='./js/common/http.js'></script>
@@ -29,53 +30,149 @@
     <![endif]-->
 </head>
 <body>
-    <section id="app">
-        <aside id="side" class="side">
-            
-            <div class="logo">
-                <i class="fas fa-database"></i>
-                <span>ATC</span>
-                <span>Client</span>
-            </div>
-            <ul class="list">
-                <li class="item on"><a class="link" href="#"><i class="fas fa-server"></i>Public Cloud</a></li>
-                <li class="item"><a class="link" href="#"><i class="fas fa-server"></i>Private Cloud</a></li>
-                <li class="item"><a class="link" href="#"><i class="fas fa-hdd"></i>Storage</a></li>
-                <li class="item"><a class="link" href="#"><i class="fas fa-user-edit"></i>Edit Account</a></li>
-            </ul>
-        </aside>
-        <section id="dashboard" class="dashboard">
-            <section id="public-cloud" class="tab on">
-                <div class="contents">
-                  <ul class="vm-list clear">
-                    <li class="vm">
-                      <i class="fab fa-windows"></i>
-                    </li>
-                    <li class="vm">
-                      <i class="fab fa-linux"></i>
-                    </li>
-                    <li class="vm">
-                      <i class="fab fa-ubuntu"></i>
-                    </li>
-                    <li class="vm">
-                      <i class="fab fa-redhat"></i>
-                    </li>
-                    <li class="vm">
-                      <i class="fab fa-fedora"></i>
-                    </li>
-                    <li class="vm">
-                      <i class="fab fa-centos"></i>
-                    </li>
-                  </ul>
-                </div>
-            </section>
-            <section id="private-cloud" class="tab"></section>
-            <section id="storage" class="tab"></section>
-            <section id="edit-account" class="tab"></section>
-        </section>
+  <section id="app">
+    <aside id="side" class="side">
+      <div class="logo">
+          <i class="fas fa-database"></i>
+          <span>ATC</span>
+          <span>Client</span>
+      </div>
+      <ul class="list">
+          <li class="item on"><a class="link" href="#"><i class="fas fa-server"></i>공용 클라우드</a></li>
+          <li class="item"><a class="link" href="#"><i class="fas fa-server"></i>사설 클라우드</a></li>
+          <li class="item"><a class="link" href="#"><i class="fas fa-hdd"></i>저장소 접근</a></li>
+      </ul>
+    </aside>
+    <section id="dashboard" class="dashboard">
+      <header class="header">
+        <div class="profile">
+          <i class="fas fa-user-circle user"></i>
+          <span>
+            <span class="name">Mr. User</span>
+            <span class="email">user@gmail.com</span>
+          </span>
+          <a href="#">
+            <i class="fas fa-cog setting"></i>
+          </a>
+        </div>
+      </header>
+      <section id="public-cloud" class="tab on">
+        <h2 class="title">공용 클라우드</h2>
+        <div class="contents">
+          <ul class="vm-list clear">
+            <li class="vm">
+              <i class="fab fa-windows"></i>
+              <div class="summary">
+                <p class="os">Windows 10</p>
+                <p class="name">ETRI VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-linux"></i>
+              <div class="summary">
+                <p class="os">Linux</p>
+                <p class="name">Linux VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-ubuntu"></i>
+              <div class="summary">
+                <p class="os">Ubuntu 20.04</p>
+                <p class="name">Ubuntu VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-redhat"></i>
+              <div class="summary">
+                <p class="os">Redhat</p>
+                <p class="name">Redhat VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-fedora"></i>
+              <div class="summary">
+                <p class="os">Fedora</p>
+                <p class="name">Fedora VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-centos"></i>
+              <div class="summary">
+                <p class="os">Centos 7</p>
+                <p class="name">Centos VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="private-cloud" class="tab">
+        <h2 class="title">사설 클라우드</h2>
+        <div class="contents">
+          <ul class="vm-list clear">
+            <li class="vm">
+              <i class="fab fa-windows"></i>
+              <div class="summary">
+                <p class="os">Windows 10</p>
+                <p class="name">ETRI VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-linux"></i>
+              <div class="summary">
+                <p class="os">Linux</p>
+                <p class="name">Linux VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-ubuntu"></i>
+              <div class="summary">
+                <p class="os">Ubuntu 20.04</p>
+                <p class="name">Ubuntu VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-redhat"></i>
+              <div class="summary">
+                <p class="os">Redhat</p>
+                <p class="name">Redhat VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-fedora"></i>
+              <div class="summary">
+                <p class="os">Fedora</p>
+                <p class="name">Fedora VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+            <li class="vm">
+              <i class="fab fa-centos"></i>
+              <div class="summary">
+                <p class="os">Centos 7</p>
+                <p class="name">Centos VM</p>
+              </div>
+              <canvas class="chart" width="400" height="400"></canvas>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="storage" class="tab">
+        <h2 class="title">저장소 접근</h2>
+      </section>
     </section>
+  </section>
 
-    <!-- JS - Page -->
-    <script src='./js/dashboard-user.js'></script>
+  <!-- JS - Page -->
+  <script src='./js/dashboard-user.js'></script>
 </body>
 </html>

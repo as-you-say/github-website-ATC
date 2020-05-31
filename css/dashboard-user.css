@@ -2,29 +2,30 @@
 
 /* Layout */
 #app {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #ddd;}
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ddd;}
 #side {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    height: 100vh;
-    width: 245px;
-    z-index: 5;}
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100vh;
+  width: 245px;
+  box-shadow: 0 0 10px 1px #00000010;
+  z-index: 5;}
 #dashboard {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    padding-left: 245px;
-    background-color: #f2f5f8;}
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding-left: 245px;
+  background-color: #f2f5f8;}
 
 /* Side Menu */
 .side {}
@@ -47,6 +48,8 @@
     text-decoration: none;
     color: #d1d7e0;
     font-weight: bold;
+    display: inline-block;
+    margin-top: 1px;
     padding-left: 45px;}
 .side .list .item .link:after {
     position: absolute;
@@ -84,6 +87,52 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box
 }
+.dashboard .header {
+  height: 103px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 295px;
+  padding-right: 55px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  z-index: 3;
+}
+.dashboard .header .profile {
+  float: right;
+  margin-top: 30px;
+  position: relative;
+  color: #27395add;
+}
+.dashboard .header .profile i.user {
+  float: left;
+  font-size: 35px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dashboard .header .profile i.user+span {
+  float: left;
+  padding-left: 50px;
+}
+.dashboard .header .profile i.setting {
+  color: #27395a;
+}
+.dashboard .header .profile .name {
+  font-size: 14px;
+  display: block;
+}
+.dashboard .header .profile .email {
+  font-size: 12px;
+  display: block;
+  color: #afb4bb;
+}
+.dashboard .header .image {}
+.dashboard .header .image img{}
 .dashboard .tab {
     top: 0;
     left: 0;
@@ -92,38 +141,74 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    padding: 0 50px 0 295px;
+    padding: 60px 50px 0 295px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     overflow: auto;
+    background-color: #fff;
 }
 .dashboard .tab.on {
     opacity: 1;
     z-index: 1;
 }
 .dashboard .tab.on .contents {
-    background-color: #fff;
-    height: 190%;
+    
 }
-
+.dashboard .tab .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 4.5%;
+}
 .dashboard .tab .contents .vm-list {
   display: block;
-  width: 100%;
+  width: 300px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 
+  width: 100%;
+  padding: 1vh 2%;
 }
 .dashboard .tab .contents .vm-list .vm {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
   float: left;
+  width: 20%;
+  margin: 1.3vh 2.5%;
+  height: 38vh;
+  cursor: pointer;
+  color: #afb4bb;
+  text-align: center;
 }
 .dashboard .tab .contents .vm-list .vm i {
-  font-size: 100px;
+  font-size: 40px;
 }
-.dashboard .tab .contents .vm-list .vm i.fa-windows{color: #378dff}
-.dashboard .tab .contents .vm-list .vm i.fa-linux{color: #252525}
-.dashboard .tab .contents .vm-list .vm i.fa-ubuntu{color: #ff8147}
-.dashboard .tab .contents .vm-list .vm i.fa-redhat{color: #ff2f2f}
-.dashboard .tab .contents .vm-list .vm i.fa-fedora{color: #415883}
-.dashboard .tab .contents .vm-list .vm i.fa-centos{color: #cb47ff;}
+.dashboard .tab .contents .vm-list .vm.on,
+.dashboard .tab .contents .vm-list .vm:hover {
+  color: #245ed6;
+  border: 1px solid #245fd688;
+  transition: all .6s;
+}
+.dashboard .tab .contents .vm-list .vm .summary {
+  display: inline-block;
+  padding-left: 20px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.dashboard .tab .contents .vm-list .vm .summary p.os {
+  font-size: 16px;
+  font-weight: bold;
+}
+.dashboard .tab .contents .vm-list .vm .summary p.name {
+  font-size: 13px;
+}
 
 @media(max-width: 1600px) {
 }
