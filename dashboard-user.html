@@ -63,52 +63,111 @@
         <div class="contents">
           <ul class="vm-list clear">
             <li class="vm">
-              <i class="fab fa-windows"></i>
-              <div class="summary">
-                <p class="os">Windows 10</p>
-                <p class="name">ETRI VM</p>
+              <div class="graph">
+                <i class="fab fa-windows"></i>
+                <div class="summary">
+                  <p class="os">Windows 10</p>
+                  <p class="name">ETRI VM</p>
+                </div>
+                <canvas class="chart" width="400" height="400"></canvas>
               </div>
-              <canvas class="chart" width="400" height="400"></canvas>
+              <div class="info">
+                <h3 class="sub-title">기본정보</h3>
+                <table>
+                  <colgroup>
+                    <col width=40%>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>PC 유형</th>
+                      <td>전용 PC</td>
+                    </tr>
+                    <tr>
+                      <th>PC ID</th>
+                      <td>WD00-0CA-874714</td>
+                    </tr>
+                    <tr>
+                      <th>PC 별칭</th>
+                      <td>Win 10 변경</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h3 class="sub-title">자원정보</h3>
+                <table>
+                  <colgroup>
+                    <col width=40%>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>CPU</th>
+                      <td>4 core</td>
+                    </tr>
+                    <tr>
+                      <th>Memory</th>
+                      <td>6 GB</td>
+                    </tr>
+                    <tr>
+                      <th>HDD(C:)</th>
+                      <td>50 GB</td>
+                    </tr>
+                    <tr>
+                      <th>IP</th>
+                      <td>192.168.204.35</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </li>
             <li class="vm">
-              <i class="fab fa-linux"></i>
-              <div class="summary">
-                <p class="os">Linux</p>
-                <p class="name">Linux VM</p>
+              <div class="graph">
+                <i class="fab fa-linux"></i>
+                <div class="summary">
+                  <p class="os">Linux</p>
+                  <p class="name">Linux VM</p>
+                </div>
+                <canvas class="chart" width="400" height="400"></canvas>
               </div>
-              <canvas class="chart" width="400" height="400"></canvas>
+              <div class="info"></div>
             </li>
             <li class="vm">
-              <i class="fab fa-ubuntu"></i>
-              <div class="summary">
-                <p class="os">Ubuntu 20.04</p>
-                <p class="name">Ubuntu VM</p>
-              </div>
-              <canvas class="chart" width="400" height="400"></canvas>
+              <div class="graph">
+                <i class="fab fa-ubuntu"></i>
+                <div class="summary">
+                  <p class="os">Ubuntu 20.04</p>
+                  <p class="name">Ubuntu VM</p>
+                </div>
+                <canvas class="chart" width="400" height="400"></canvas>
+              </div><div class="info"></div>
             </li>
             <li class="vm">
-              <i class="fab fa-redhat"></i>
-              <div class="summary">
-                <p class="os">Redhat</p>
-                <p class="name">Redhat VM</p>
-              </div>
-              <canvas class="chart" width="400" height="400"></canvas>
+              <div class="graph">
+                <i class="fab fa-redhat"></i>
+                <div class="summary">
+                  <p class="os">Redhat</p>
+                  <p class="name">Redhat VM</p>
+                </div>
+                <canvas class="chart" width="400" height="400"></canvas>
+              </div><div class="info"></div>
             </li>
             <li class="vm">
-              <i class="fab fa-fedora"></i>
-              <div class="summary">
-                <p class="os">Fedora</p>
-                <p class="name">Fedora VM</p>
-              </div>
-              <canvas class="chart" width="400" height="400"></canvas>
+              <div class="graph">
+                <i class="fab fa-fedora"></i>
+                <div class="summary">
+                  <p class="os">Fedora</p>
+                  <p class="name">Fedora VM</p>
+                </div>
+                <canvas class="chart" width="400" height="400"></canvas>
+              </div><div class="info"></div>
             </li>
             <li class="vm">
-              <i class="fab fa-centos"></i>
-              <div class="summary">
-                <p class="os">Centos 7</p>
-                <p class="name">Centos VM</p>
-              </div>
-              <canvas class="chart" width="400" height="400"></canvas>
+              <div class="graph">
+                <i class="fab fa-centos"></i>
+                <div class="summary">
+                  <p class="os">Centos 7</p>
+                  <p class="name">Centos VM</p>
+                </div>
+                <canvas class="chart" width="400" height="400"></canvas>
+              </div><div class="info"></div>
             </li>
           </ul>
         </div>
@@ -240,11 +299,68 @@
       </section>
       <section id="download" class="tab">
         <h2 class="title">다운로드</h2>
+        <div class="contents">
+          <div class="download">
+            <ul class="file-list clear">
+              <li>
+                <div class="info">
+                  <h3>SKB Cloud PC Client 다운로드</h3>
+                  <p>
+                    SKB Cloud PC Client 프로그램은 PC 환경의 Windows, Linux 버전과 Mobile 환경의 Android, iOS 버전을 지원합니다.
+                    이용중이신 PC 및 Mobile OS 환경에 맞는 Client 프로그램을 다운로드 설치 후 이용해주세요.
+                  </p>
+                </div>
+                <div class="link">
+                  <a href="#">Windows Client 32bit</a>
+                  <a href="#">Windows Client 64bit</a>
+                  <a href="#">Linux Client 32bit</a>
+                  <a href="#">Linux Client 64bit</a>
+                  <a href="#">Android</a>
+                  <a href="#">IOS</a>
+                </div>
+              </li>
+              <li>
+                <div class="info">
+                  <h3>Azwell Cloud PC Client 다운로드</h3>
+                  <p>
+                    Azwell Cloud PC Client 프로그램은 PC 환경의 Windows, Linux 버전과 Mobile 환경의 Android, iOS 버전을 지원합니다.
+                    이용중이신 PC 및 Mobile OS 환경에 맞는 Client 프로그램을 다운로드 설치 후 이용해주세요.
+                  </p>
+                </div>
+                <div class="link">
+                  <a href="#">Windows Client 32bit</a>
+                  <a href="#">Windows Client 64bit</a>
+                  <a href="#">Linux Client 32bit</a>
+                  <a href="#">Linux Client 64bit</a>
+                  <a href="#">Android</a>
+                  <a href="#">IOS</a>
+                </div>
+              </li>
+              <li>
+                <div class="info">
+                  <h3>메뉴얼 다운로드</h3>
+                  <p>
+                    메뉴얼은 PC 환경의 Windows, Linux 버전과 Mobile 환경의 Android, iOS 버전을 지원합니다.
+                    이용중이신 PC 및 Mobile OS 환경에 맞는 메뉴얼을 다운로드 설치 후 이용해주세요.
+                  </p>
+                  <div class="link">
+                    <a href="#">Windows Client 32bit</a>
+                    <a href="#">Windows Client 64bit</a>
+                    <a href="#">Linux Client 32bit</a>
+                    <a href="#">Linux Client 64bit</a>
+                    <a href="#">Android</a>
+                    <a href="#">IOS</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </section>
   </section>
 
-  <div class="popup on">
+  <div class="popup">
     <div class="contents">
       <h2 class="title">개인정보 수정</h2>
       <div class="form">

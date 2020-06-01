@@ -37,9 +37,12 @@
           <span>Admin</span>
       </div>
       <ul class="list">
-          <li class="item on"><a class="link" href="#"><i class="fas fa-server"></i>사용자 이력</a></li>
-          <li class="item"><a class="link" href="#"><i class="fas fa-server"></i>사용자 자원</a></li>
-          <li class="item"><a class="link" href="#"><i class="fas fa-hdd"></i>저장소 관리</a></li>
+          <li class="item"><a class="link" href="#"><i class="fas fa-server"></i>사용자 이력</a></li>
+          <li class="item js-item"><a class="link" href="#">- 접속</a></li>
+          <li class="item js-item"><a class="link" href="#">- 저장소</a></li>
+          <li class="item js-item"><a class="link" href="#">- 클라우드</a></li>
+          <li class="item js-item"><a class="link" href="#"><i class="fas fa-server"></i>사용자 자원</a></li>
+          <li class="item js-item"><a class="link" href="#"><i class="fas fa-hdd"></i>저장소 관리</a></li>
       </ul>
     </aside>
     <section id="dashboard" class="dashboard">
@@ -56,7 +59,205 @@
         </div>
       </header>
       <section id="user-log" class="tab on">
-        <h2 class="title">사용자 이력</h2>
+        <h2 class="title">사용자 접속이력</h2>
+        <div class="contents">
+          <div class="user-log">
+            <table class="table">
+              <thead>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>등록일</th>
+                <th>상태</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="user-log" class="tab on">
+        <h2 class="title">사용자 저장소 사용이력</h2>
+        <div class="contents">
+          <div class="user-log">
+            <table class="table">
+              <thead>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>등록일</th>
+                <th>상태</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="user-log" class="tab on">
+        <h2 class="title">사용자 클라우드 이용이력</h2>
+        <div class="contents">
+          <div class="user-log">
+            <table class="table">
+              <thead>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>등록일</th>
+                <th>상태</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변완료</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><a href="#">사설 클라우드를 사용하면 별도의 요금이 필요한가요?</a></td>
+                  <td>직원</td>
+                  <td>2020.06.01</td>
+                  <td>답변대기</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
       <section id="user-storage" class="tab">
         <h2 class="title">사용자 자원</h2>

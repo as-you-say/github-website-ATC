@@ -152,6 +152,41 @@
 }
 
 
+.dashboard .tab .contents .user-log {
+  width: 100%;
+  padding: 0 4.5%;
+  box-sizing: border-box;}
+.dashboard .tab .contents .user-log .table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+  font-size: 14px;
+  /* box-shadow: 0 0.125em 0.313em rgba(50,50,93,.09), 0 0.063em 0.125em rgba(0,0,0,.07); */
+  box-shadow: 0 0.250em 0.375em rgba(50,50,93,.09), 0 0.063em 0.188em rgba(0,0,0,.08);
+  /* box-shadow: 0 0.063em 0.313em 0 rgba(0,0,0,.07), 0 0.438em 1.063em 0 rgba(0,0,0,.1); */
+  /* box-shadow: 0 0.938em 2.188em rgba(50,50,93,.1), 0 0.313em 0.938em rgba(0,0,0,.07); */}
+.dashboard .tab .contents .table th {
+  padding: 13px 0;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #dbdbdb;
+  font-weight: bold;}
+.dashboard .tab .contents .table td {
+  padding: 18px 0;
+  border-bottom: 1px solid #dbdbdb;
+  text-align: center;}
+.dashboard .tab .contents .table td:nth-child(2) {
+  text-align: left;}
+.dashboard .tab .contents .table td a {
+  color: #000;
+  text-decoration: none;}
+.dashboard .tab .contents .table tr:hover {
+  background-color: #27395a1e;
+  cursor: pointer;
+  transition: all .3s;}
+
+
+
 @media(max-width: 1600px) {
 }
 
