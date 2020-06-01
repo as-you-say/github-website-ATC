@@ -198,9 +198,9 @@
   font-size: 13px;}
 .dashboard .tab .contents .vm-list .vm.detail {
   position: absolute;
-  left: 0;
+  left: 1.8%;
   top: 0;
-  width: 100%;
+  width: 95%;
   height: 79.6vh;
   background-color: #fff;
   z-index: 10;
